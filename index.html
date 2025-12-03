@@ -1,15 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bulk™ UK | Protein , Vitamins , Sports Nutrition , Fitness Foods</title>
-    
-<link rel="icon" href="./assets/images/Bulk-favicon.png" type="image/x-icon">
-    
-    
+
+    <link rel="icon" href="./assets/images/Bulk-favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./src/style.css">
 </head>
+
 <body>
-    
+    <!-- header started  -->
+    <header class="w-full">
+        <div id="offer" class="flex justify-center items-center bg-black text-white p-1 text-[1rem] font-semibold">
+            <p>Up to 80% off</p>
+        </div>
+
+        <!-- navbar started -->
+        <nav class="w-[1100px] mx-auto flex justify-between mt-8 mb-4 items-center">
+
+            <div class="nav-items">
+                <img src="./assets/images/bulk-logo.svg" alt="bulk logo" class="w-[120px] h-auto">
+            </div>
+
+            <div class="nav-items">
+                <div class="relative">
+                    <input type="text" placeholder="SEARCH"
+                        class="w-[800px] h-[48px] pl-12 pr-5 py-4 bg-[#fafafa] border-none text-gray rounded-[30px]   focus:outline-none focus:ring-1 focus:ring-black text-[0.9rem]" />
+
+                    <!-- Search Icon -->
+                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+                        <i class="fa-solid fa-magnifying-glass text-black text-[15px]"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-items flex items-center justify-between">
+                <span
+                    class="cursor-pointer w-[20px] h-[15px]  border border-[1px solid black] mx-2 rounded-sm overflow-hidden">
+                    <img src="./assets/images/ENGLAND-flag.svg" alt="">
+                </span>
+
+                <i class="fa-solid fa-user text-gray-600 text-[1.1rem]  cursor-pointer mx-2"></i>
+
+                <i class="fa-solid fa-cart-shopping text-gray-600 text-[1.1rem]  mx-2 cursor-pointer"></i>
+
+            </div>
+
+
+        </nav>
+        <!-- navbar ended -->
+
+        <!-- navbar menu started  -->
+        <nav class="w-[1100px] mx-auto relative">
+            <ul class="w-[1100px] flex justify-between items-center text-[1rem] font-semibold py-1">
+
+                <!-- Dropdown Item 1 -->
+                <div class="relative group">
+                    <a href="#" class="flex items-center text-[red] hover:text-[red] transition">
+                        Offers
+                        <i
+                            class="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                    </a>
+                    <!-- Dropdown Menu (hover) -->
+
+                    <div
+                        class="absolute top-full left-0 mt-1 w-[1100px] h-[450px] bg-white
+                         border border-[1px solid #00000070] rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-12">
+
+                        <h1 class="w-fit text-[2rem] mb-4 cursor-pointer hover:text-[red]">Offers</h1>
+                        <ul class="inline-flex justify-center gap-3 flex-col ">
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Best sellers
+                            </li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">New Products
+                            </li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Trending
+                                Products</li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Clearance</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Dropdown Item 2 -->
+                <div class="group">
+                    <a href="#" class="flex items-center hover:text-[red] transition">
+                        Shop By Goal
+                        <i
+                            class="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                    </a>
+                    <!-- Dropdown Menu (hover) -->
+                    <div
+                        class="absolute top-full left-0 mt-1 w-[1100px] h-[450px] bg-white
+                         border border-[1px solid #00000070] rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-12">
+
+                        <h1 class="w-fit text-[2rem] mb-4 cursor-pointer hover:text-[red]">Shop By Goal</h1>
+                        <ul class="inline-flex justify-center gap-3 flex-col ">
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Build Muscle
+                            </li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Weigth Loss</li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Endurance</li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Health &
+                                WellBeing</li>
+                            <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Vegan</li>
+                    </div>
+                </div>
+
+                <!-- Dropdown Item 3 -->
+                <div class="group">
+                    <a href="#" class="flex items-center hover:text-[red] transition">
+                        Protein
+                        <i
+                            class="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                    </a>
+                    <!-- Dropdown Menu (hover) -->
+                    <div
+                        class="absolute top-full left-0 mt-1 w-[1100px] h-[450px] bg-white
+                         border border-[1px solid #00000070] rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-12">
+
+                        <div class="flex justify-start gap-5">
+                            <div>
+                                <h1 class="w-fit text-[2rem] mb-4 cursor-pointer hover:text-[red]">Protein</h1>
+                                <ul class="inline-flex justify-center gap-3 flex-col ">
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">All
+                                        Protein
+                                    </li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Whey
+                                        Protein
+                                    </li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Clear
+                                        Protein</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Vegan
+                                        Protein</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Mass
+                                        Gainers
+                                    </li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Beef
+                                        Protein
+                                    </li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Collagen
+                                        Protein</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">
+                                        Recoverey
+                                        Protein</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Complete
+                                        Food Shake</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Protein
+                                        Bars
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h1 class="opacity-0 w-fit text-[2rem] mb-4 cursor-default hover:text-[red]">Protein</h1>
+                                <ul class="inline-flex justify-center gap-3 flex-col ">
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Protein Snacks</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">Protein Smoothie</li>
+                                    <li class="cursor-pointer text-[0.9rem] hover:text-[red] hover:text-[1rem]">High Protein Foods</li>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </ul>
+        </nav>
+
+        <!-- navbar menu ended  -->
+
+    </header>
+    <!-- header ended  -->
+
+    <!-- main started  -->
+    <main class="w-[1100px] mx-auto flex justify-center my-10 items-center">
+
+    </main>
+    <!-- main ended  -->
+
+    <!-- footer started -->
+    <footer>
+
+    </footer>
+    <!-- footer ended -->
+
+
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://kit.fontawesome.com/0b93ff58c6.js" crossorigin="anonymous"></script>
+
 </html>
